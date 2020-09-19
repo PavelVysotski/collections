@@ -1,4 +1,4 @@
-package liblary;
+package library;
 
 import java.util.Objects;
 
