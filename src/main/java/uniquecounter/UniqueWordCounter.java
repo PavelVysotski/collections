@@ -3,7 +3,7 @@ package uniquecounter;
 import java.util.Collections;
 import java.util.Map;
 
-public class UniqueWordCounter implements UniqueCounter {
+public class UniqueWordCounter implements UniqueCounterI {
 
 
     @Override
