@@ -1,5 +1,6 @@
 package uniquecounter;
 
+import java.util.Collections;
 import java.util.Map;
 
 public class UniqueWordCounter implements UniqueCounter {
@@ -43,13 +44,21 @@ public class UniqueWordCounter implements UniqueCounter {
     }
 
     @Override
+    public void getMostFrequentWordWithMethod(Map<String, Integer> uniqueWords) {
+        int max = Collections.max(uniqueWords.values());
+        for (Map.Entry<String, Integer> val : uniqueWords.entrySet()) {
+            if (val.getValue() == max) {
+                System.out.println("Чаще всех добавлен элемент: " + val.getKey());
+            }
+        }
+    }
+
+    @Override
     public void printWordsFrequency(Map<String, Integer> uniqueWords) {
         System.out.println("Вывод: ");
-
         for (Map.Entry<String, Integer> map : uniqueWords.entrySet()) {
             System.out.println("Элемент " + map.getKey() + " добавлен " + map.getValue() + " раз(а).");
         }
-
         System.out.println();
     }
 }

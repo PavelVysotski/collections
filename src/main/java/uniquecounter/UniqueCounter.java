@@ -8,6 +8,7 @@ public interface UniqueCounter {
     void getMostFrequentWord(Map<String, Integer> uniqueWords, int max);
     int findMaxValue(Map<String, Integer> uniqueWords);
     void printWordsFrequency(Map<String, Integer> uniqueWords);
+    void getMostFrequentWordWithMethod(Map<String, Integer> uniqueWords);
 
 
 }

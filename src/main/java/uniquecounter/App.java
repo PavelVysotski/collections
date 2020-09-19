@@ -1,5 +1,6 @@
 package uniquecounter;
 
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -8,6 +9,7 @@ public class App {
 
         Map<String, Integer> map = new HashMap<>();
         UniqueWordCounter unique = new UniqueWordCounter();
+
 
         unique.addWord(map, "Andrey");
         unique.addWord(map, "Pavel");
@@ -25,6 +27,10 @@ public class App {
 
         unique.printWordsFrequency(map);
 
+//Реализация поиска часто добавляемого при помощи метода класса Collections
+        unique.getMostFrequentWordWithMethod(map);
+
+//Реализация поиска часто добавляемого "вручную"
         unique.getMostFrequentWord(map, unique.findMaxValue(map));
 
     }
