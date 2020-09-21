@@ -1,8 +1,9 @@
-package library;
+package shop;
 
 import java.util.Scanner;
 
 public class CommandReader {
+
 
     private static final Scanner scan = new Scanner(System.in);
 
