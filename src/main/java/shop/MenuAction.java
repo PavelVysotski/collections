@@ -6,7 +6,7 @@ import java.util.List;
 public class MenuAction {
 
     public static void worker() {
-        Product p1 = Product.createNewProduct("Картофель", 12.50);
+        Product p1 = Product.createNewProduct("Картофель", 2.10);
         Product p2 = Product.createNewProduct("Морковь", 7.34);
         Product p3 = Product.createNewProduct("Лук", 5.12);
         Product p4 = Product.createNewProduct("Апельсин", 5.79);
@@ -25,6 +25,8 @@ public class MenuAction {
         Shop.addProduct(shop, p6);
         Shop.addProduct(shop, p7);
         Shop.addProduct(shop, p8);
+        Shop.addProduct(shop, Product.createNewProduct("Дыня", 3.90));
+        Shop.addProduct(shop, Product.createNewProduct("Авокадо", 10.80));
 
         boolean mainLoop = true;
         while (mainLoop) {

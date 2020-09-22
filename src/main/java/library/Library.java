@@ -28,7 +28,7 @@ public class Library {
 
     public static void findByAuthor(List<Book> library, String author) {
         for (Book list : library) {
-            if (list.getAuthor().equalsIgnoreCase(author)) {
+           if (list.getAuthor().equalsIgnoreCase(author)) {
                 System.out.println(list);
             }
         }
